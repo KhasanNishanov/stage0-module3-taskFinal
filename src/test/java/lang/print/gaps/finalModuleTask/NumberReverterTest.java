@@ -13,7 +13,6 @@ import java.util.stream.Collectors;
 import static org.junit.jupiter.api.Assertions.*;
 
 class NumberReverterTest extends BaseIOTest {
-
     @Test
     void revertReverts457() {
         NumberReverter reverter = new NumberReverter();
@@ -22,7 +21,6 @@ class NumberReverterTest extends BaseIOTest {
 
         assertEquals("754\n", updateLineSpliterators(outContent.toString()));
     }
-
     @Test
     void revertReverts334() {
         NumberReverter reverter = new NumberReverter();
@@ -31,7 +29,6 @@ class NumberReverterTest extends BaseIOTest {
 
         assertEquals("433\n", updateLineSpliterators(outContent.toString()));
     }
-
     @Test
     void containsNoLibsOrStringMethods() throws IOException {
         Path path = Paths.get("src/main/java/lang/print/gaps/finalModuleTask/NumberReverter.java");
